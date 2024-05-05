@@ -1,0 +1,512 @@
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #754ef9;
+}
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+/*NavBar and Myself CSS*/
+.AllSections {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+.navbar .navbarLinks {
+  display: flex;
+  flex-direction: row;
+
+  margin: 15px auto;
+}
+
+.navbar .navbarLinks a {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  margin-left: 1rem;
+  transition: 0.3s;
+}
+.navbar .navbarLinks a:hover,
+.navbar .navbarLinks a.active {
+  color: var(--main-color);
+  transition: 0.3s;
+}
+.MySelf {
+  display: flex;
+  flex-direction: row;
+
+  margin: 145px 145px;
+}
+
+.MySelf .MyIntro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+.MySelf .MyIntro .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.MySelf .MyIntro .MyPara {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  height: auto;
+  width: auto;
+  max-height: 15rem;
+  max-width: 55rem;
+
+  min-width: 20rem;
+  min-height: 10rem;
+}
+.MySelf .MyIntro .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0;
+}
+.MySelf .MyIntro .MyPara p {
+  text-align: center;
+}
+.info h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 0;
+}
+.info h1 {
+  font-size: 3.3rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.info p {
+  font-size: 2rem;
+  margin: 0 0;
+  text-align: center;
+}
+.MySelf .MyIntro .links ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.MySelf .MyIntro .links ul li {
+  margin: 5px 0px;
+  padding: 5px 15px;
+}
+.MySelf .MyIntro .links img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 3px solid var(--main-color);
+}
+.MySelf .MyIntro .links a :hover {
+  background: var(--main-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+.MySelf .MyImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MySelf .MyImage img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+.MySelf .MyImage img {
+  border: 2px solid var(--main-color);
+  max-height: 40rem;
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/*About Me CSS*/
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--second-bg-color);
+}
+.AboutMe .headdingInAboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 145px;
+  width: auto;
+  height: auto;
+  max-height: 35rem;
+}
+.AboutMe .headdingInAboutMe .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.AboutMe .headdingInAboutMe .heading .me {
+  color: var(--main-color);
+}
+.AboutMe .headdingInAboutMe h1 {
+  font-size: 3.3rem;
+  text-align: center;
+}
+.AboutMe .headdingInAboutMe h2 {
+  font-size: 1.7rem;
+  text-align: center;
+}
+.AboutMe .headdingInAboutMe P {
+  font-size: 0.9rem;
+  text-align: center;
+}
+.AboutMe .cardsInaboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.AboutMe .cardsInaboutMe p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+.AboutMe .cardsInaboutMe h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: antiquewhite;
+}
+.AboutMe .cardsInaboutMe .card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+
+  height: auto;
+  width: auto;
+  max-width: 35rem;
+  max-height: 45rem;
+  background-color: var(--bg-color);
+  margin: 15px auto;
+  border-radius: 15px;
+}
+.AboutMe .cardsInaboutMe .card1:hover {
+  border: 2px solid var(--main-color);
+  transform: scale(1.05);
+  transition: all ease-in-out 1s;
+}
+
+.AboutMe .cardsInaboutMe .card2 {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  max-width: 35rem;
+  max-height: 45rem;
+  background-color: var(--bg-color);
+  margin: 15px auto;
+  border-radius: 15px;
+}
+.AboutMe .cardsInaboutMe .card2:hover {
+  border: 2px solid var(--main-color);
+  transform: scale(1.05);
+  transition: all ease-in-out 1s;
+}
+
+.AboutMe .cardsInaboutMe .card3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  height: auto;
+  width: auto;
+  max-width: 35rem;
+  max-height: 45rem;
+  background-color: var(--bg-color);
+  margin: 15px auto;
+  border-radius: 15px;
+}
+.AboutMe .cardsInaboutMe .card3:hover {
+  border: 2px solid var(--main-color);
+  transform: scale(1.05);
+  transition: all ease-in-out 1s;
+}
+.MySkills {
+  display: flex;
+  flex-direction: column;
+
+  margin: 25px 145px;
+}
+.MySkills h1 {
+  font-size: 3.3rem;
+}
+.MySkills .CardsInSkills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.MySkills .CardsInSkills h3 {
+  color: var(--main-color);
+  font-size: 1.7rem;
+  text-align: center;
+}
+.MySkills .CardsInSkills img {
+  height: 80px;
+  width: 80px;
+  filter: invert(80%);
+}
+.MySkills .CardsInSkills .SkillCard1 {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 10px;
+  border-radius: 25px;
+  height: auto;
+  width: auto;
+  max-width: 35rem;
+  max-height: 45rem;
+  text-align: center;
+  background-color: var(--second-bg-color);
+}
+
+.MySkills .CardsInSkills .SkillCard2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 10px;
+  border-radius: 25px;
+  height: auto;
+  width: auto;
+  max-width: 35rem;
+  max-height: 45rem;
+  text-align: center;
+  padding: 15px 15px;
+  background-color: var(--second-bg-color);
+}
+
+.MySkills .CardsInSkills .SkillCard3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 10px;
+  border-radius: 25px;
+  padding: 15px 15px;
+  height: auto;
+  width: auto;
+  max-width: 35rem;
+  max-height: 45rem;
+  text-align: center;
+  background-color: var(--second-bg-color);
+}
+/*Hover Of Skill Card*/
+.MySkills .CardsInSkills .SkillCard1:hover {
+  border: 2px solid var(--main-color);
+  transform: scale(1.005);
+  transition: all ease-in-out 0.5s;
+}
+.MySkills .CardsInSkills .SkillCard2:hover {
+  border: 2px solid var(--main-color);
+  transform: scale(1.005);
+  transition: all ease-in-out 0.5s;
+}
+.MySkills .CardsInSkills .SkillCard3:hover {
+  border: 2px solid var(--main-color);
+  transform: scale(1.005);
+  transition: all ease-in-out 0.5s;
+}
+/*Projects CSS*/
+.Projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 95px 145px;
+}
+.Projects h1 {
+  font-size: 3.3rem;
+}
+.Projects h3 {
+  font-size: 1.9rem;
+  color: var(--main-color);
+}
+.Projects .CardsInProjects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Projects .CardsInProjects img {
+  position: relative;
+  margin: 15px auto;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  filter: invert(80%);
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.Projects .CardsInProjects a:hover {
+  color: var(--main-color);
+  transition: 0.3s;
+  scale: 1.1;
+}
+.Projects .CardsInProjects .ProjectCard1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  border-radius: 25px;
+  margin: 15px 15px;
+  background-image: url("Images/GYM\ Backgound.jpg");
+  background-repeat: no-repeat;
+
+  height: auto;
+  width: auto;
+  max-width: 35rem;
+  max-height: 45rem;
+  background-size: auto auto;
+}
+.Projects .CardsInProjects .ProjectCard2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  border-radius: 25px;
+  margin: 15px 15px;
+  background-image: url("Images/BI.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  width: auto;
+  max-width: 35rem;
+  max-height: 45rem;
+  background-size: auto auto;
+}
+.Projects .CardsInProjects .ProjectCard3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  z-index: 0;
+  border-radius: 25px;
+  margin: 15px 15px;
+  background-image: url("Images/nuts-gae0c0b42f_1920.jpg");
+  background-repeat: no-repeat;
+  height: auto;
+  width: auto;
+  max-width: 35rem;
+  max-height: 45rem;
+  background-size: auto auto;
+}
+.Projects .CardsInProjects .ProjectCard1:hover {
+  border: 2px solid var(--main-color);
+  transform: translateY(-15px);
+  transition: all ease-in-out 0.5s;
+}
+
+.Projects .CardsInProjects .ProjectCard2:hover {
+  border: 2px solid var(--main-color);
+  transform: translateY(-15px);
+  transition: all ease-in-out 0.5s;
+}
+.Projects .CardsInProjects .ProjectCard3:hover {
+  border: 2px solid var(--main-color);
+  transform: translateY(-15px);
+  transition: all ease-in-out 0.5s;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+#myBtn:hover {
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  transform: scale(1.2);
+}
+.copyright {
+  font-size: 1rem;
+  margin: 5px 5px;
+}
+
+/*Animations while go to that section*/
+
+.MySelf,
+.AboutMe {
+  opacity: 0;
+
+  animation: slide-in 2s ease-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-1.3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
